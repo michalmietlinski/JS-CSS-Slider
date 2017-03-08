@@ -12,12 +12,15 @@
 
 			<h2>Two sliders binded together</h2>
 			<section>
-			<div onClick="triggermove('second', 'next')">W lewo</div>
-			<div onClick="triggermove('second', 'prev')">W prawo</div>
-		<div class="wrapper half" id="newone">
+				<div class="left-side">
+			<div onClick="triggermove('carouselone', 'next')" class="left">Left</div>
+			<div onClick="triggermove('carouselone', 'prev')" class="right">Right</div>
+			<div class="clearer"></div>
+		<div class="wrapper half scallable" id="carouselone">
+
 			<div class="slide">
 				<img src="sampleimages/IMG_0425.jpg">
-				<div class="caption">cokolwiek</div>
+				<div class="caption">Sample caption</div>
 			</div>
 			<div class="slide">
 				<img src="sampleimages/IMG_0426.jpg">
@@ -33,10 +36,10 @@
 				</div>
 			</div>
 			
-			<div class="wrapper half" id="second">
+			<div class="wrapper half strict" id="carouselthree">
 				<div class="slide">
 					<img src="sampleimages/IMG_0425.jpg">
-					<div class="caption">cokolwiek</div>
+					<div class="caption">Sample caption</div>
 				</div>
 				<div class="slide">
 					<img src="sampleimages/IMG_0426.jpg">
@@ -51,6 +54,35 @@
 					<img src="sampleimages/IMG_0427.jpg">
 				</div>
 			</div>
+		</div>
+		<div class="right-side">
+			"carouselone": {</br>
+        "type": "transit",</br>
+        "autoplay": false,</br>
+        "currentslide": 0,</br>
+        "transition": 0.3,</br>
+        "interval": 1,</br>
+
+        "direction": "down",</br>
+        "binded": "carouselthree",</br>
+        "elements": 1,</br>
+    },</br>
+    "carouselthree": {</br>
+        "type": "carousel",</br>
+        "autoplay": true,</br>
+        "currentslide": 0,</br>
+        "transition": 0.5,</br>
+
+        "interval": 3,</br>
+
+        "direction": "right",</br>
+        "bind": "carouselone",</br>
+        "elements": 3,</br>
+    },
+
+    <p>NOTE:</p>
+    If you autoplay Bind- the one binded will also trigger, but not the other way around
+		</div>
 			</section>
 			<div class="wrapper" id="third">
 				<div class="slide">
@@ -64,8 +96,7 @@
 					<img src="sampleimages/IMG_0427.jpg">
 				</div>
 			</div>
-<div onClick="triggermove('third', 'next')">W lewo</div>
-			<div onClick="triggermove('third', 'prev')">W prawo</div>
+
 		</div>
 			</body>
 		

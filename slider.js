@@ -7,27 +7,24 @@ var j = 0;
 //Availlable types - slider, carousel, transit
 var settings = {
     "global": {},
-    "newone": {
+    "carouselone": {
         "type": "transit",
         "autoplay": false,
         "currentslide": 0,
         "transition": 0.3,
         "interval": 1,
-
         "direction": "down",
-        "binded": "second",
+        "binded": "carouselthree",
         "elements": 1,
     },
-    "second": {
+    "carouselthree": {
         "type": "carousel",
-        "autoplay": true,
+        "autoplay": false,
         "currentslide": 0,
         "transition": 0.5,
-
         "interval": 3,
-
         "direction": "right",
-        "bind": "newone",
+        "bind": "carouselone",
         "elements": 3,
     },
     "third": {
