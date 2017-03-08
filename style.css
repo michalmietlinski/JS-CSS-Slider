@@ -1,0 +1,41 @@
+  .all-wrapper{ 
+    max-width:1366px;
+    margin:0 auto;
+
+  }
+
+  .wrapper{
+   width:100%;
+   overflow:hidden;
+   position:relative;
+   transition: 400ms linear;
+   }
+   .wrapper.half{
+    width:50%;
+   }
+   .wrapper.strict{
+    width:500px;
+   }
+   .wrapper:after{
+   content: " ";
+   padding-top: 90%;
+   display: block;
+    }
+   .slide{
+   width:100%;
+   position: absolute;
+   }
+   .slide img{
+    width:auto;
+    height:auto;
+   max-width:100%;
+   max-height:100%;
+   }
+   #second{
+   background:#000;
+   float:left;
+   }
+   #newone{
+   float:left;}
+   #third{
+   float:right;}
