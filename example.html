@@ -5,16 +5,23 @@
 	  <title>JS-CSS-Slider examples</title>
 	</head>
 	<body>
+  <div class="header">
+   <div class="all-wrapper">
+   <h1 class="left">JS-CSS-Slider examples</h1>
+   <h2 class="right">By Michał Mietliński</h2>
+  </div>
+
+  </div>
 
 		
 		<div class="all-wrapper">
-			<h1>JS-CSS-Slider examples</h1>
-
+			<h2>Setup</h2>
+			
 			<h2>Two sliders binded together</h2>
 			<section>
 				<div class="left-side">
-			<div onClick="triggermove('carouselone', 'next')" class="left">Left</div>
-			<div onClick="triggermove('carouselone', 'prev')" class="right">Right</div>
+			<div onClick="triggermove('carouselone', 'next')" class="arrows left">Left</div>
+			<div onClick="triggermove('carouselone', 'prev')" class="arrows right">Right</div>
 			<div class="clearer"></div>
 		<div class="wrapper half scallable" id="carouselone">
 
@@ -84,6 +91,136 @@
     If you autoplay Bind- the one binded will also trigger, but not the other way around
 		</div>
 			</section>
+   <h2>Different direction</h2>
+   <section>
+    <div class="left-side">
+ 
+   <div class="clearer"></div>
+  <div class="wrapper half scallable" id="carouselfour">
+
+   <div class="slide">
+    <img src="sampleimages/IMG_0425.jpg">
+    <div class="caption">Sample caption</div>
+   </div>
+   <div class="slide">
+    <img src="sampleimages/IMG_0426.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+   </div>
+   
+   <div class="wrapper half scallable" id="carouselfive">
+    <div class="slide">
+     <img src="sampleimages/IMG_0425.jpg">
+     <div class="caption">Sample caption</div>
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0426.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/IMG_0427.jpg">
+    </div>
+   </div>
+  </div>
+  <div class="right-side">
+   "carouselfour": {</br>
+        "type": "carousel",</br>
+        "autoplay": true,</br>
+        "currentslide": 0,</br>
+        "transition": 0.5,</br>
+        "interval": 3,</br>
+        "direction": "top",</br>
+        "elements": 1,</br>
+    },</br>
+    "carouselfive": {</br>
+        "type": "carousel",</br>
+        "autoplay": true,</br>
+        "currentslide": 0,</br>
+        "transition": 0.5,</br>
+        "interval": 3,</br>
+        "direction": "right",</br>
+        "elements": 1,</br>
+    },
+  </div>
+   </section>
+   <h2>Slider vs Carousel</h2>
+   <section>
+    <div class="left-side">
+ 
+   <div class="clearer"></div>
+  <div class="wrapper half scallable" id="carouselsix">
+
+   <div class="slide">
+    <img src="sampleimages/icon01.png">
+    
+   </div>
+   <div class="slide">
+    <img src="sampleimages/icon02.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon03.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon04.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon05.png">
+    </div>
+   </div>
+   
+   <div class="wrapper half scallable" id="carouselseven">
+    <div class="slide">
+    <img src="sampleimages/icon01.png">
+    
+   </div>
+   <div class="slide">
+    <img src="sampleimages/icon02.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon03.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon04.png">
+    </div>
+    <div class="slide">
+     <img src="sampleimages/icon05.png">
+    </div>
+   </div>
+  </div>
+  <div class="right-side">
+   "carouselfour": {</br>
+        "type": "carousel",</br>
+        "autoplay": true,</br>
+        "currentslide": 0,</br>
+        "transition": 0.5,</br>
+        "interval": 3,</br>
+        "direction": "top",</br>
+        "elements": 1,</br>
+    },</br>
+    "carouselfive": {</br>
+        "type": "carousel",</br>
+        "autoplay": true,</br>
+        "currentslide": 0,</br>
+        "transition": 0.5,</br>
+        "interval": 3,</br>
+        "direction": "right",</br>
+        "elements": 1,</br>
+    },
+  </div>
+   </section>
 			<div class="wrapper" id="third">
 				<div class="slide">
 					<img src="sampleimages/IMG_0425.jpg">
